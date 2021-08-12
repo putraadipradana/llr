@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@import url(//db.onlinewebfonts.com/c/ca950fb3b688a39431b29264c4beadb1?family=Skylight+Graffiti);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-item img {
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-brand {
+  padding: 0;
+  font-size: 25px;
+  font-family: "Skylight Graffiti";
+}
+
+.button {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+  fill: white;
+}
+
+.XE8yyf {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  z-index: 10;
+}
+
+.line::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 10px;
+  background-color: #212529;
+  margin-bottom: 10px;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+.navbar-bg {
+  background-color: white;
+}
+
+.title h2 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.title {
+  margin-top: 90px;
+}
+
+.foot-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgba(24, 65, 42, 1);
+}
+
+.sticky-footer span {
+}
+
+#offcanvasTopLabel {
+    margin: 0;
+}
+
+.blog p {
+    font-family: 'Roboto mono', monospace;
+    font-size: 13px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* post */
+.posts {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.post {
+    max-width: 400px;
+    max-height: 800px;
+}
+
+.post-thumbnail {
+    max-width: 400px;
+    max-height: 520px;
+    height: 520px;
+    width: 400px;
+}
+
+.post-thumbnail .thumb {
+    height: 520px;
+    width: 400px;
+    object-fit: cover;
+}
+
+/* about */
+.about-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profile-img img {
+    max-height: 350px;
+    max-width: 465px;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 30px;
+}
+
+.llr-info {
+    font-family: "roboto mono", monospace;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .about-card {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .profile-info {
+      padding: 0;
+      padding-top: 20px;
+  }
+
+  .profile-img img {
+      display: flex;
+      flex-wrap: wrap;
+      width: 330px;
+  }
+
+  .post {
+      margin-bottom: 15px;
+  }
+
+  .foot-content {
+    flex-direction: column;
+  }
+
+  .social h2 {
+    font-size: 14px;
+  }
+
+  .contact h2 {
+    font-size: 14px;
+  }
+
+  .con span {
+    font-size: 12px;
+  }
+
+  .blog-list {
+    flex-direction: column;
+  }
+
+  .offcanvas-top {
+      height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .foot h1 {
+    font-size: 180px;
+  }
+}
